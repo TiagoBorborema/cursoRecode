@@ -1,0 +1,12 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    width: 400px;
+}
+
+td{
+    text-align: center;
+    width: 25%;
+}
