@@ -1,4 +1,4 @@
-p{
+body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -6,7 +6,62 @@ textarea{
     width: 400px;
 }
 
-td{
+#formas-de-pagamento{
+    color: hsl(0, 100%, 50%);
+  
+}
+
+.menu{
+    background-color: #ff0000;
+    width: 100%;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+     
+}
+
+strike{
+    color: #ff0000;
+    font-size: 14px;
+}
+.preco-item{
+    color: #008000;
+    margin-top: 0px;
+}
+
+#rodape{
     text-align: center;
-    width: 25%;
+   
+}
+
+.categoria{
+    border: 0;
+    width: 100%; 
+}
+
+.produtos{
+    /* display: inline; */
+    width: 80%;
+    margin-left: 20%;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap; 
+}
+.box-produto{
+    position: relative;
+    width:300px;
+   
+}
+
+.box-produto hr{
+    width: 190px;
+    margin-left: -5px;
 }

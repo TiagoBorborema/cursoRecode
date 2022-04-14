@@ -4,96 +4,115 @@
         <meta charset="UTF-8">
         <title>Produtos - Full Stack Eletro</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
     </head> 
     <body>
         <!--PAGE PRODUTOS-->
-        <table width="100%" bgcolor="red"> 
-            <tr>
-                <td align="center" width="25%"><a href="index.html">
-                    <img width="150px" src="imagens/carrinhoLogo.png"  alt="Full Stack Eletro" >
-                      </a></td>
-                <td align="center" width="25%"><a href="loja.html"><font color="white">Nossas Lojas</font></a></td>
-                <td align="center" width="25%"><a href="contato.html"><font color="white">Contato</font></a></td>
-            </tr>
-        </table>
-        <h2>Produtos</h2>
+        <nav class="menu">
+            <a href="index.html">
+                 <img width="150px" src="imagens/carrinhoLogo.png"  alt="Full Stack Eletro" >
+            </a>
+             <a href="produtos.html">Produtos</a>     
+             <a href="loja.html">Nossas Lojas</a>
+             <a href="contato.html">Contato</a>
+        </nav>
+        
+         <header>
+
+           <h2>Produtos</h2>
+
+        </header>
+
         <hr>  
-        <table border="0" width="100%" cellpadding=>
-            <tr>
-                <td rowspan="5" width="20%" valign="top">
-                    <h3><font face="Arial">Categorias</font></h3>
-                    <ol>
-                        <li><font>Geladeiras (3)</font></li>
-                        <li><font>Fogões (3)</font></li>
-                        <li><font>Microondas (2)</font></li>
-                        <li><font>Lavadoura de Roupas(2)</font></li>
-                        <li><font>Lava-louças(4)</font></li>
-                    </ol>
-                </td>
-                <td width="20%" align="center" valign="bottom">
+        <section class="categoria">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li onclick="exibirCategoria('geladeira')">Geladeiras (3)</li>
+                        <li onclick="exibirCategoria('fogao')">Fogões (3)</li>
+                        <li onclick="exibirCategoria('microondas')">Microondas (2)</li>
+                        <li onclick="exibirCategoria('lava-roupas')">Lavadoura de Roupas(2)</li>
+                        <li onclick="exibirCategoria('lava-loucas')">Lava-louças(4)</li>
+                        <li onclick="exibirCategoria('tv')">TV(2)</li>
+                    </ul>
+        </section>
+
+        <div class="produtos">
+   
+                <div class="box-produto" id="geladeira" style="display: block;">
                     <img width="130px" src="imagens/geladeira.png">
                     <br>
-                    <font face="Arial" size="2">Geladeira Frost Free Brastemp Side Inverse 540L</font>
+                     Geladeira Frost Free Brastemp Side Inverse 540L
                     <br>
                     <hr>
-                    <font face="Arial" size="2" color="red"><strike>R$ 6.349,00</strike></font>
+                    <strike>R$ 6.349,00</strike>
                     <br>
-                    <font>R$ 5.000,99</font>
-                </td>
-                <td width="20%" align="center" valign="bottom">
+                     <p class="preco-item">$ 5.000,99</p>
+                </div>
+                
+                <div class="box-produto" id="fogao" style="display: block;">
                     <img width="130px" src="imagens/fogao.png">
                     <br>
-                    <font face="Arial" size="2">Fogão Consul 4 Bocas</font>
+                     Fogão Consul 4 Bocas 
                     <br>
                     <hr>
-                    <font face="Arial" size="2" color="red"><strike>R$ 1.800.99</strike></font>
+                    <strike>R$ 1.800.99</strike>
                     <br>
-                    <font>R$ 1.300,00</font>
-                </td>
-                <td width="20%" align="center" valign="bottom">
+                    <p class="preco-item">R$ 1.300,00</p>
+                </div>
+                
+                <div class="box-produto" id="microondas" style="display: block;">
                     <img width="130px" src="imagens/microondas.png">
                     <br>
-                    <font face="Arial" size="2">Microondas Electrolux 40L</font>
+                    Microondas Electrolux 40L
                     <br>
                     <hr>
-                    <font face="Arial" size="2" color="red"><strike>R$ 1.150,00</strike></font>
+                     <strike>R$ 1.150,00</strike>
                     <br>
-                    <font>R$ 899,00</font>
-                </td>
-                <td width="20%" align="center" valign="bottom">
+                    <p class="preco-item">R$ 899,00</p>
+                </div>
+                
+                <div class="box-produto" id="lava-roupas" style="display: block;">
                     <img width="110px" src="imagens/lavaroupas.png">
                     <br>
-                    <font face="Arial" size="2">Lavadoura de Roupas Brastemp</font>
+                      Lavadoura de Roupas Brastemp
                     <br>
                     <hr>
-                    <font face="Arial" size="2" color="red"><strike>R$ 5.840,00</strike></font>
+                     <strike>R$ 5.840,00</strike>
                     <br>
-                    <font>R$ 5.000,99</font>
-                </td>
-                <td width="20%" align="center" valign="bottom">
+                    <p class="preco-item">R$ 5.000,99</p>
+                </div>
+
+                <div class="box-produto" id="lava-loucas" style="display: block;">
                     <img width="130px" src="imagens/lavaloucas.png">
                     <br>
-                    <font face="Arial" size="2">Lavadoura de Louças Brastemp</font>
+                     Lavadoura de Louças Brastemp
                     <br>
                     <hr>
-                    <font face="Arial" size="2" color="red"><strike>R$ 4.390,99</strike></font>
+                    <strike>R$ 4.390,99</strike>
                     <br>
-                    <font>R$ 3.700,00</font>
-                </td>
-            </tr>
-        </table>
+                    <p class="preco-item">R$ 3.700,0</p>
+                </div>
+                <div class="box-produto" id="tv" style="display: block;">
+                    <img width="130px" src="imagens/tvSamsung.png">
+                    <br>
+                     SmartTV Sansumg "52" 
+                    <br>
+                    <hr>
+                    <strike>R$ 2.800,99</strike>
+                    <br>
+                    <p class="preco-item">R$ 2.000,0</p>
+                </div>
+            </div>
         <br><br>
-        <center>
-            <spam>
-                <p>
-                    <h4><font face="Arial" color="red">Formas de Pagamento</font></h4>
-                </p>
+        
+        <footer id="rodape"> 
+            <p>
+                <h4 id="formas-de-pagamento">Formas de Pagamento</h4>
                 <img src="imagens/pagamento.png" alt="Formas de pagamento" width="300px"> 
-            </spam>    
-        </center>
-        <center>
-            <font face="Arial" size="2" color="blue">&copy;Recode Pro</font>
-        </center>
+            </p>
+            <p>&copy;Recode Pro</p>
+         </footer>
+
     </body>
 
 </html>
